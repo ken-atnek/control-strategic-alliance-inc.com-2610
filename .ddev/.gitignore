@@ -1,0 +1,9 @@
+/.ddev-docker-compose-base.yaml
+/.ddev-docker-compose-full.yaml
+/.ddev-docker-compose.*.yaml
+/.webimageBuild
+/.dbimageBuild
+/.importdb*
+/mutagen
+/sequelpro.spf
+

@@ -1,0 +1,118 @@
+// 応募者詳細：一覧へ戻る、応募者概要、情報セクション、項目リスト
+
+@use "./foundation/" as *;
+
+// 一覧へ戻る
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: $space-md;
+  color: $color-text-secondary;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  transition: color $transition-base;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+// 応募者名・応募日時（システム情報）
+.applicant-summary {
+  display: flex;
+  align-items: baseline;
+  gap: $space-md;
+  margin-bottom: $space-lg;
+  padding-bottom: $space-md;
+  border-bottom: 1px solid $color-border;
+
+  &__name {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+  }
+
+  &__meta {
+    color: $color-text-secondary;
+    font-size: $font-size-sm;
+  }
+}
+
+// セクションの並び
+.applicant-detail {
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+}
+
+.detail-section {
+  @include card;
+  padding: $space-lg;
+
+  h2 {
+    margin-bottom: $space-md;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+  }
+}
+
+// 項目リスト（dl / dt / dd）
+.detail-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: $space-md $space-lg;
+
+  &--single {
+    grid-template-columns: 1fr;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &--full {
+      grid-column: 1 / -1;
+    }
+
+    dt {
+      color: $color-text-secondary;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-medium;
+    }
+
+    dd {
+      color: $color-text-primary;
+      font-size: $font-size-base;
+      line-height: 1.7;
+    }
+  }
+
+  &__file {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+  }
+
+  &__file-name {
+    color: $color-text-primary;
+  }
+
+  &__file-link {
+    color: $color-secondary;
+    font-weight: $font-weight-medium;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include mq-down($breakpoint-laptop) {
+  .detail-list {
+    grid-template-columns: 1fr;
+  }
+}
+

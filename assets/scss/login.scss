@@ -1,0 +1,86 @@
+// ログイン画面専用スタイル
+
+@use "./foundation/" as *;
+
+body.login-page {
+  min-width: 0;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: $space-lg;
+}
+
+.login__card {
+  width: 100%;
+  max-width: 400px;
+  padding: $space-xl $space-lg;
+  @include card;
+}
+
+.login__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-xs;
+  margin-bottom: $space-lg;
+
+  img {
+    height: 32px;
+  }
+
+  span {
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    color: $color-primary;
+  }
+}
+
+.login__title {
+  margin: 0 0 $space-lg;
+  color: $color-primary;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  text-align: center;
+}
+
+.login__error {
+  margin: 0 0 $space-md;
+  padding: $space-xs $space-sm;
+  border: 1px solid $color-secondary;
+  border-radius: $radius-sm;
+  background: rgba(176, 141, 87, 0.08);
+  color: $color-text-primary;
+  font-size: $font-size-sm;
+}
+
+.login__field {
+  margin-bottom: $space-md;
+}
+
+.login__options {
+  margin-bottom: $space-lg;
+}
+
+.login__checkbox {
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+  margin-bottom: 0;
+  color: $color-text-secondary;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-regular;
+  cursor: pointer;
+
+  input {
+    margin: 0;
+  }
+}
+
+.login__submit {
+  width: 100%;
+}
+

@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+*.map
+assets/css/*.css
+.ddev/*
+!.ddev/config.yaml
+!.ddev/.gitignore
+

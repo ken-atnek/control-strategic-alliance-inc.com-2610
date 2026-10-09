@@ -1,48 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ログイン｜採用管理 - STRATEGIC ALLIANCE inc.</title>
-<link rel="stylesheet" href="assets/css/globals.css">
-<link rel="stylesheet" href="assets/css/login.css">
-</head>
-<body class="admin-page login-page">
-  <main class="login">
-    <div class="login__card">
-      <div class="login__brand">
-        <img src="assets/images/logo.png" alt="STRATEGIC ALLIANCE inc.">
-        <span>採用管理</span>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ログイン｜採用管理 - STRATEGIC ALLIANCE inc.</title>
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+  </head>
+  <body class="admin-page login-page">
+    <main class="login">
+      <div class="login__card">
+        <div class="login__brand">
+          <img src="assets/images/logo.png" alt="STRATEGIC ALLIANCE inc." />
+          <span>採用管理</span>
+        </div>
 
-      <h1 class="login__title">ログイン</h1>
+        <h1 class="login__title">ログイン</h1>
 
-      <!-- 認証エラー時の表示例。通常は非表示（.login__error.is-error を表示に切り替える）
+        <!-- 認証エラー時の表示例。通常は非表示（.login__error.is-error を表示に切り替える）
       <p class="login__error is-error" role="alert">メールアドレスまたはパスワードが正しくありません。</p>
       -->
 
-      <form class="login__form" action="" method="post">
-        <div class="login__field">
-          <label for="login-email">メールアドレス</label>
-          <input type="email" id="login-email" name="email" autocomplete="username" required>
-        </div>
-
-        <div class="login__field">
-          <label for="login-password">パスワード</label>
-          <input type="password" id="login-password" name="password" autocomplete="current-password" required>
-        </div>
-
-        <div class="login__options">
-          <label class="login__checkbox" for="login-remember">
-            <input type="checkbox" id="login-remember" name="remember">
-            <span>ログイン状態を保持する</span>
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn--primary login__submit">ログイン</button>
-      </form>
-    </div>
-  </main>
-</body>
+        <form class="login__form" action="" method="post">
+          <div class="login__field">
+            <label for="login-email">メールアドレス</label>
+            <input
+              type="email"
+              id="login-email"
+              name="email"
+              autocomplete="username"
+              required
+            />
+          </div>
+          <div class="login__field">
+            <label for="login-password">パスワード</label>
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+          <div class="login__options">
+            <label class="login__checkbox" for="login-remember">
+              <input type="checkbox" id="login-remember" name="remember" />
+              <span>ログイン状態を保持する</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary login__submit">
+            ログイン
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
-

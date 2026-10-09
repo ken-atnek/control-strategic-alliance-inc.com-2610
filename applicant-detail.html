@@ -1,180 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>応募者詳細｜採用管理 - STRATEGIC ALLIANCE inc.</title>
-<link rel="stylesheet" href="assets/css/globals.css">
-<link rel="stylesheet" href="assets/css/applicant-detail.css">
-</head>
-<body class="admin-page applicant-detail-page">
-  <header class="container-header">
-    <a class="admin-brand" href="applicants.html">
-      <img src="assets/images/logo.png" alt="STRATEGIC ALLIANCE inc.">
-      <span>採用管理</span>
-    </a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>応募者詳細｜採用管理 - STRATEGIC ALLIANCE inc.</title>
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/applicant-detail.css" />
+  </head>
+  <body class="admin-page applicant-detail-page">
+    <header class="container-header">
+      <a class="admin-brand" href="applicants.html">
+        <img src="assets/images/logo.png" alt="STRATEGIC ALLIANCE inc." />
+        <span>採用管理</span>
+      </a>
+    </header>
 
-  <div class="inner-body">
-    <aside class="block-sidebar">
-      <nav aria-label="管理メニュー">
-        <a class="is-current" href="applicants.html">応募者管理</a>
-      </nav>
-    </aside>
+    <div class="inner-body">
+      <aside class="block-sidebar">
+        <nav aria-label="管理メニュー">
+          <a class="is-current" href="applicants.html">応募者管理</a>
+        </nav>
+      </aside>
 
-    <main>
-      <a class="back-link" href="applicants.html">‹ 応募者一覧へ戻る</a>
+      <main>
+        <a class="back-link" href="applicants.html">‹ 応募者一覧へ戻る</a>
 
-      <div class="page-header">
-        <div>
-          <p class="page-header__eyebrow">Applicant details</p>
-          <h1>応募者詳細</h1>
+        <div class="page-header">
+          <div>
+            <p class="page-header__eyebrow">Applicant details</p>
+            <h1>応募者詳細</h1>
+          </div>
         </div>
-      </div>
+        <div class="applicant-summary">
+          <p class="applicant-summary__name">山田 太郎</p>
+          <p class="applicant-summary__meta">
+            応募日時：<time datetime="2026-09-16T10:24">2026-09-16 10:24</time>
+          </p>
+        </div>
+        <div class="applicant-detail">
+          <section class="detail-section" aria-labelledby="basic-info-title">
+            <h2 id="basic-info-title">基本情報</h2>
+            <dl class="detail-list">
+              <div class="detail-list__item">
+                <dt>氏名</dt>
+                <dd>山田 太郎</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>フリガナ</dt>
+                <dd>ヤマダ タロウ</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>生年月日</dt>
+                <dd>1990年1月1日</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>電話番号</dt>
+                <dd>090-0000-0001</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>メールアドレス</dt>
+                <dd>yamada.taro@example.com</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>現在の就業状況</dt>
+                <dd>在職中</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>住所</dt>
+                <dd>東京都千代田区丸の内1-1-1</dd>
+              </div>
+            </dl>
+          </section>
 
-      <div class="applicant-summary">
-        <p class="applicant-summary__name">山田 太郎</p>
-        <p class="applicant-summary__meta">応募日時：<time datetime="2026-09-16T10:24">2026-09-16 10:24</time></p>
-      </div>
+          <section class="detail-section" aria-labelledby="experience-title">
+            <h2 id="experience-title">経験・スキル</h2>
+            <dl class="detail-list">
+              <div class="detail-list__item">
+                <dt>保険業界での経験年数</dt>
+                <dd>3年</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>金融業界での経験年数</dt>
+                <dd>2年</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>営業経験年数</dt>
+                <dd>5年</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>マネジメント経験の有無</dt>
+                <dd>あり</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>採用・育成・教育経験の有無</dt>
+                <dd>あり</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>労務管理経験の有無</dt>
+                <dd>なし</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>保険募集管理やコンプライアンス関連経験の有無</dt>
+                <dd>なし</dd>
+              </div>
+            </dl>
+          </section>
 
-      <div class="applicant-detail">
-        <section class="detail-section" aria-labelledby="basic-info-title">
-          <h2 id="basic-info-title">基本情報</h2>
-          <dl class="detail-list">
-            <div class="detail-list__item">
-              <dt>氏名</dt>
-              <dd>山田 太郎</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>フリガナ</dt>
-              <dd>ヤマダ タロウ</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>生年月日</dt>
-              <dd>1990年1月1日</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>電話番号</dt>
-              <dd>090-0000-0001</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>メールアドレス</dt>
-              <dd>yamada.taro@example.com</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>現在の就業状況</dt>
-              <dd>在職中</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>住所</dt>
-              <dd>東京都千代田区丸の内1-1-1</dd>
-            </div>
-          </dl>
-        </section>
+          <section class="detail-section" aria-labelledby="career-title">
+            <h2 id="career-title">保有資格・職務経歴</h2>
+            <dl class="detail-list">
+              <div class="detail-list__item">
+                <dt>生命保険募集人資格</dt>
+                <dd>保有</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>損害保険募集人資格</dt>
+                <dd>未保有</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>FP資格</dt>
+                <dd>未保有</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>その他保有資格</dt>
+                <dd>なし</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>直近の勤務先</dt>
+                <dd>○○生命保険株式会社</dd>
+              </div>
+              <div class="detail-list__item">
+                <dt>マネジメント人数</dt>
+                <dd>5名</dd>
+              </div>
+              <div class="detail-list__item detail-list__item--full">
+                <dt>経験業務</dt>
+                <dd>法人営業、保険商品の提案、既存顧客のフォローを担当。</dd>
+              </div>
+              <div class="detail-list__item detail-list__item--full">
+                <dt>主な実績</dt>
+                <dd>営業目標を3年連続で達成。新人5名の育成を担当。</dd>
+              </div>
+              <div class="detail-list__item detail-list__item--full">
+                <dt>職務経歴書アップロード</dt>
+                <dd class="detail-list__file">
+                  <span class="detail-list__file-name">resume_yamada.pdf</span>
+                  <a class="detail-list__file-link" href="#"
+                    >職務経歴書を開く</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </section>
 
-        <section class="detail-section" aria-labelledby="experience-title">
-          <h2 id="experience-title">経験・スキル</h2>
-          <dl class="detail-list">
-            <div class="detail-list__item">
-              <dt>保険業界での経験年数</dt>
-              <dd>3年</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>金融業界での経験年数</dt>
-              <dd>2年</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>営業経験年数</dt>
-              <dd>5年</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>マネジメント経験の有無</dt>
-              <dd>あり</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>採用・育成・教育経験の有無</dt>
-              <dd>あり</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>労務管理経験の有無</dt>
-              <dd>なし</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>保険募集管理やコンプライアンス関連経験の有無</dt>
-              <dd>なし</dd>
-            </div>
-          </dl>
-        </section>
-
-        <section class="detail-section" aria-labelledby="career-title">
-          <h2 id="career-title">保有資格・職務経歴</h2>
-          <dl class="detail-list">
-            <div class="detail-list__item">
-              <dt>生命保険募集人資格</dt>
-              <dd>保有</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>損害保険募集人資格</dt>
-              <dd>未保有</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>FP資格</dt>
-              <dd>未保有</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>その他保有資格</dt>
-              <dd>なし</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>直近の勤務先</dt>
-              <dd>○○生命保険株式会社</dd>
-            </div>
-            <div class="detail-list__item">
-              <dt>マネジメント人数</dt>
-              <dd>5名</dd>
-            </div>
-            <div class="detail-list__item detail-list__item--full">
-              <dt>経験業務</dt>
-              <dd>法人営業、保険商品の提案、既存顧客のフォローを担当。</dd>
-            </div>
-            <div class="detail-list__item detail-list__item--full">
-              <dt>主な実績</dt>
-              <dd>営業目標を3年連続で達成。新人5名の育成を担当。</dd>
-            </div>
-            <div class="detail-list__item detail-list__item--full">
-              <dt>職務経歴書アップロード</dt>
-              <dd class="detail-list__file">
-                <span class="detail-list__file-name">resume_yamada.pdf</span>
-                <a class="detail-list__file-link" href="#">職務経歴書を開く</a>
-              </dd>
-            </div>
-          </dl>
-        </section>
-
-        <section class="detail-section" aria-labelledby="free-input-title">
-          <h2 id="free-input-title">自由入力</h2>
-          <dl class="detail-list detail-list--single">
-            <div class="detail-list__item detail-list__item--full">
-              <dt>志望動機</dt>
-              <dd>前職では法人向けの保険提案を中心に担当し、お客様の事業状況に合わせた保障設計にやりがいを感じてきました。貴社では保険業界に特化した採用支援を通じて、より多くの募集人の方のキャリア形成に関われる点に魅力を感じ、志望いたしました。</dd>
-            </div>
-            <div class="detail-list__item detail-list__item--full">
-              <dt>自己PR</dt>
-              <dd>法人営業として3年間、既存顧客のフォローと新規開拓の両方に携わってきました。特に新人メンバーの育成では、同行営業やロールプレイングを通じて早期に独り立ちできる体制づくりを意識しています。数字への責任感と、周囲を巻き込みながら成果を出す姿勢が強みです。</dd>
-            </div>
-            <div class="detail-list__item detail-list__item--full">
-              <dt>希望条件</dt>
-              <dd>勤務地は東京都内を希望します。入社後はマネジメント経験を活かせるポジションを希望していますが、まずは現場での業務理解を優先したいと考えています。</dd>
-            </div>
-            <div class="detail-list__item detail-list__item--full">
-              <dt>質問・連絡事項</dt>
-              <dd>面接の日程は平日夕方以降でご調整いただけますと幸いです。ご担当者様からのご連絡をお待ちしております。</dd>
-            </div>
-          </dl>
-        </section>
-      </div>
-    </main>
-  </div>
-</body>
+          <section class="detail-section" aria-labelledby="free-input-title">
+            <h2 id="free-input-title">自由入力</h2>
+            <dl class="detail-list detail-list--single">
+              <div class="detail-list__item detail-list__item--full">
+                <dt>志望動機</dt>
+                <dd>
+                  前職では法人向けの保険提案を中心に担当し、お客様の事業状況に合わせた保障設計にやりがいを感じてきました。貴社では保険業界に特化した採用支援を通じて、より多くの募集人の方のキャリア形成に関われる点に魅力を感じ、志望いたしました。
+                </dd>
+              </div>
+              <div class="detail-list__item detail-list__item--full">
+                <dt>自己PR</dt>
+                <dd>
+                  法人営業として3年間、既存顧客のフォローと新規開拓の両方に携わってきました。特に新人メンバーの育成では、同行営業やロールプレイングを通じて早期に独り立ちできる体制づくりを意識しています。数字への責任感と、周囲を巻き込みながら成果を出す姿勢が強みです。
+                </dd>
+              </div>
+              <div class="detail-list__item detail-list__item--full">
+                <dt>希望条件</dt>
+                <dd>
+                  勤務地は東京都内を希望します。入社後はマネジメント経験を活かせるポジションを希望していますが、まずは現場での業務理解を優先したいと考えています。
+                </dd>
+              </div>
+              <div class="detail-list__item detail-list__item--full">
+                <dt>質問・連絡事項</dt>
+                <dd>
+                  面接の日程は平日夕方以降でご調整いただけますと幸いです。ご担当者様からのご連絡をお待ちしております。
+                </dd>
+              </div>
+            </dl>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
-

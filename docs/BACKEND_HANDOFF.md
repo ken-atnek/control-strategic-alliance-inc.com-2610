@@ -8,7 +8,7 @@
 
 ## 対象画面
 
-- `login.html`：管理画面ログイン
+- `index.html`：管理画面ログイン
 - `applicants.html`：応募者一覧
 - `applicant-detail.html`：応募者詳細
 
